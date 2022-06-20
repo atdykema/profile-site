@@ -7,25 +7,23 @@
         <title>ProfilePlaza</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="./static/index.css">
+        <link rel="stylesheet" href="./static/signup.css">
     </head>
     <body>
         <div class="main_container">
             <div class="main_header">
-                <a class="main_logo" href="/">
-                    <img class="profile_plaza_logo" src="./static/profileplazalogo.svg">
-                </a>
+                <a class="main_logo" href="/">ProfilePlaza</a>
             </div>
             <div class="main_body">
                 <div class="main_banner">
-                    <img class="profile_plaza_logo_full" src="./static/profileplazalogofull.svg">
+                    *Banner goes here*
                 </div>
                 <div class="main_title">
-                    Create your own easily-sharable personal profile!
+                    Welcome!
                 </div>
                 <div class="user_container">
                     <div class="user_title">
-                            Login
+                            Sign up
                     </div>
                     <div class="user_login" id="user_login_email">
                         <div class="user_loginin_email_caption">
@@ -34,14 +32,22 @@
                         <input class="login_input" id="login_input_email" name="email" placeholder="email"/>
                     </div>
                     <div class="user_login" id="user_login_password">
-                        <div class="user_loginin_password_caption">
-                            Password:   
+                        <div class="user_login_password_container">
+                            <div class="user_loginin_password_caption">
+                                Password:   
+                            </div>
+                            <input class="login_input" id="login_input_password" name="password" placeholder="password"/>
                         </div>
-                        <input class="login_input" id="login_input_password" name="password" placeholder="password"/>
+                        <div class="user_login_password_container">
+                            <div class="user_loginin_retype_password_caption">
+                                Retype password:   
+                            </div>
+                            <input class="login_input" id="login_input_password" name="retype_password" placeholder="password"/>
+                        </div>
                     </div>
-                    <div class="login-signup-button-container">
-                        <a class="user_login_button" href="/">Login</a>
-                        <a class="user_signup_button" href="/signup">Sign up</a>
+                    <div>
+                        <a class="user_login_button" href="/">Log in</a>
+                        <button class="user_signup_button">Sign up</button>
                     </div>
                 </div>  
 
