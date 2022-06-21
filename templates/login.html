@@ -7,7 +7,7 @@
         <title>ProfilePlaza</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="./static/signup.css">
+        <link rel="stylesheet" href="./static/login.css">
     </head>
     <body>
         <div class="main_container">
@@ -21,44 +21,38 @@
                     <img class="profile_plaza_logo_full" src="./static/profileplazalogofull.svg">
                 </div>
                 <div class="main_title">
-                    Welcome, sign up to get started!
+                    Create your own easily-sharable personal profile!
                 </div>
                 <div class="user_container">
                     <div class="user_title">
-                            Sign up
+                            Login
                     </div>
                     <div class="err_msg">{{err}}</div>
-                    <form class="signup_form" action="/signup" method="POST">
+                    <form class="login_form" action="/login" method="POST">
                         <div class="user_login" id="user_login_email">
                             <label class="user_login_email_caption">
                                 Email: 
                             </label>
-                            <input class="login_input" id="login_input_email" name="email" placeholder="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$" required/>
+                            <input class="login_input" id="login_input_email" name="email" placeholder="email"/>
                         </div>
                         <div class="user_login" id="user_login_password">
                             <label class="user_login_password_caption">
                                 Password:
                             </label>
-                            <input class="login_input" id="login_input_password" name="password" placeholder="password" required/>
-                        </div>
-                        <div class="user_login" id="user_login_password">
-                            <label class="user_login_password_caption">
-                                Retype Password:
-                            </label>
-                            <input class="login_input" id="login_input_password" name="re_password" placeholder="password" required/>
+                            <input class="login_input" id="login_input_password" name="password" placeholder="password"/>
                         </div>
                         <div class="login-signup-button-container">
-                            <a class="user_login_button" href="/login">Login</a>
-                            <button class="user_signup_button" type="submit">Sign Up</button>
+                            <button class="user_login_button" type="submit">Login</button>
+                            <a class="user_signup_button" href="/signup">Sign up</a>
                         </div>
                     </form>
-                </div>    
+                </div>  
 
             </div>
 
 
         </div>
         
-        <script src="" async defer></script>
+        
     </body>
 </html>
